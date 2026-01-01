@@ -1,9 +1,11 @@
-// Firebase config
+
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAwA5XF0VnlQC9g-XFfD-MDLujrPc0ppHs",
+  authDomain: "daivik-home-professional-care.firebaseapp.com",
+  projectId: "daivik-home-professional-care",
+  storageBucket: "daivik-home-professional-care.appspot.com",
+  messagingSenderId: "617053901680",
+  appId: "1:617053901680:web:8ef3e6fbbf07bd69d735b5"
 };
 
 // Init firebase (safe)

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daivik Home Services - Expert Services at Your Doorstep</title>
+    <title>Daivik Home Professional Care - Expert Services at Your Doorstep</title>
+
     <style>
         :root {
-            --primary-color: #0066cc; /* Similar blue to reference */
+            --primary-color: #0066cc;
             --secondary-color: #f5f5f5;
             --text-dark: #333;
             --text-light: #666;
@@ -26,7 +27,6 @@
             color: var(--text-dark);
         }
 
-        /* --- Header --- */
         header {
             background-color: var(--white);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -57,11 +57,11 @@
             font-weight: bold;
             color: var(--primary-color);
             text-decoration: none;
-            display: flex;
-            align-items: center;
         }
-        
-        .logo span { color: var(--text-dark); }
+
+        .logo span {
+            color: var(--text-dark);
+        }
 
         .nav-links {
             display: flex;
@@ -72,10 +72,11 @@
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 500;
-            transition: color 0.3s;
         }
 
-        .nav-links a:hover { color: var(--primary-color); }
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
 
         .cta-btn {
             background-color: var(--primary-color);
@@ -86,9 +87,9 @@
             font-weight: bold;
         }
 
-        /* --- Hero Section --- */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1581578731117-104f2a41272c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1581578731117-104f2a41272c');
             background-size: cover;
             background-position: center;
             height: 500px;
@@ -104,7 +105,6 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .hero h2 {
@@ -127,7 +127,6 @@
             padding: 10px 20px;
             flex-grow: 1;
             border-radius: 50px;
-            font-size: 1rem;
             outline: none;
         }
 
@@ -141,14 +140,12 @@
             font-weight: bold;
         }
 
-        /* --- Main Categories --- */
         .categories {
             padding: 40px 5%;
             background-color: var(--white);
             text-align: center;
             max-width: 1200px;
             margin: -50px auto 0;
-            position: relative;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             display: grid;
@@ -171,16 +168,8 @@
         .icon {
             font-size: 3rem;
             margin-bottom: 15px;
-            display: block;
         }
 
-        .category-title {
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: var(--text-dark);
-        }
-
-        /* --- Detailed Services Section --- */
         .section-container {
             max-width: 1200px;
             margin: 60px auto;
@@ -191,7 +180,6 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 40px;
-            color: var(--text-dark);
         }
 
         .services-grid {
@@ -205,12 +193,6 @@
             padding: 20px;
             border: 1px solid #eee;
             border-radius: 8px;
-            transition: all 0.3s;
-        }
-
-        .service-item:hover {
-            border-color: var(--primary-color);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .service-icon {
@@ -219,28 +201,12 @@
             color: var(--primary-color);
         }
 
-        /* --- Stats/Trust Section --- */
         .stats-section {
             background-color: var(--secondary-color);
             padding: 50px 0;
             text-align: center;
         }
 
-        .stats-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .stat-item h3 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-
-        /* --- Footer --- */
         footer {
             background-color: #222;
             color: #ddd;
@@ -253,14 +219,11 @@
             gap: 40px;
             max-width: 1200px;
             margin: 0 auto;
-            border-bottom: 1px solid #444;
-            padding-bottom: 30px;
         }
 
         .footer-col h4 {
             color: var(--white);
-            margin-bottom: 20px;
-            font-size: 1.2rem;
+            margin-bottom: 15px;
         }
 
         .footer-col ul {
@@ -271,217 +234,79 @@
             margin-bottom: 10px;
         }
 
-        .footer-col a {
-            color: #aaa;
-            text-decoration: none;
-        }
-
-        .footer-col a:hover {
-            color: var(--white);
-        }
-
         .copyright {
             text-align: center;
             padding-top: 20px;
             font-size: 0.9rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero h1 { font-size: 2rem; }
-            .categories { margin-top: 0; }
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="top-bar">
-        Get 10% off on your first booking! Call us: +91-98765-43210
+<div class="top-bar">
+    Get 10% off on your first booking! Call us: <b>+91 7906199445</b>
+</div>
+
+<header>
+    <div class="nav-container">
+        <a href="#" class="logo">Daivik <span>Home Professional Care</span></a>
+        <nav class="nav-links">
+            <a href="#">Appliances</a>
+            <a href="#">Home Care</a>
+            <a href="#">Beauty</a>
+            <a href="#">Handyman</a>
+        </nav>
+        <a href="#" class="cta-btn">Book Now</a>
     </div>
+</header>
 
-    <header>
-        <div class="nav-container">
-            <a href="#" class="logo">Daivik<span>HomeServices</span></a>
-            <nav class="nav-links">
-                <a href="#appliances">Appliances</a>
-                <a href="#home-care">Home Care</a>
-                <a href="#beauty">Beauty</a>
-                <a href="#handyman">Handyman</a>
-                <a href="#about">About Us</a>
-            </nav>
-            <a href="#" class="cta-btn">Book Now</a>
-        </div>
-    </header>
-
-    <section class="hero">
-        <h1>Professional Home Services</h1>
-        <h2>Expert help at your doorstep for cleaning, repairs & beauty.</h2>
-        <div class="search-bar">
-            <input type="text" placeholder="What are you looking for? (e.g., AC Repair, Sofa Cleaning)">
-            <button>Search</button>
-        </div>
-    </section>
-
-    <div class="categories">
-        <div class="category-card">
-            <span class="icon">❄️</span>
-            <div class="category-title">Appliance Care</div>
-        </div>
-        <div class="category-card">
-            <span class="icon">🧹</span>
-            <div class="category-title">Home Cleaning</div>
-        </div>
-        <div class="category-card">
-            <span class="icon">💅</span>
-            <div class="category-title">Beauty Services</div>
-        </div>
-        <div class="category-card">
-            <span class="icon">🔧</span>
-            <div class="category-title">Handyman</div>
-        </div>
+<section class="hero">
+    <h1>Professional Home Services</h1>
+    <h2>Expert help at your doorstep</h2>
+    <div class="search-bar">
+        <input type="text" placeholder="Search services like AC Repair, Cleaning">
+        <button>Search</button>
     </div>
+</section>
 
-    <section id="appliances" class="section-container">
-        <h2 class="section-title">Appliance Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <div class="service-icon">💨</div>
-                <p>AC Repair</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🧴</div>
-                <p>Washing Machine</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🧊</div>
-                <p>Refrigerator</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">💧</div>
-                <p>RO Purifier</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">📺</div>
-                <p>LED TV</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🥘</div>
-                <p>Microwave</p>
-            </div>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Daivik Home Professional Care</h4>
+            <p>Trusted home services with quality, safety & trained professionals.</p>
         </div>
-    </section>
-
-    <section id="beauty" class="section-container" style="background-color: #fffaf0; padding: 40px; border-radius: 10px;">
-        <h2 class="section-title">Beauty & Salon at Home</h2>
-        <div class="services-grid">
-            <div class="service-item" style="background: white;">
-                <div class="service-icon">💇‍♀️</div>
-                <p>Hair Cut & Style</p>
-            </div>
-            <div class="service-item" style="background: white;">
-                <div class="service-icon">💄</div>
-                <p>Makeup</p>
-            </div>
-            <div class="service-item" style="background: white;">
-                <div class="service-icon">🧖‍♀️</div>
-                <p>Facial & Cleanup</p>
-            </div>
-            <div class="service-item" style="background: white;">
-                <div class="service-icon">💅</div>
-                <p>Manicure/Pedicure</p>
-            </div>
-            <div class="service-item" style="background: white;">
-                <div class="service-icon">💆‍♂️</div>
-                <p>Massage Therapy</p>
-            </div>
+        <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Appliance Repair</li>
+                <li>Home Cleaning</li>
+                <li>Beauty at Home</li>
+                <li>Handyman Services</li>
+            </ul>
         </div>
-    </section>
-
-    <section id="home-care" class="section-container">
-        <h2 class="section-title">Cleaning & Handyman</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <div class="service-icon">🛋️</div>
-                <p>Sofa Cleaning</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🚽</div>
-                <p>Bathroom Cleaning</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🐜</div>
-                <p>Pest Control</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">💡</div>
-                <p>Electrician</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🚰</div>
-                <p>Plumber</p>
-            </div>
-            <div class="service-item">
-                <div class="service-icon">🔨</div>
-                <p>Carpenter</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="stats-section">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>10k+</h3>
-                <p>Happy Customers</p>
-            </div>
-            <div class="stat-item">
-                <h3>500+</h3>
-                <p>Verified Professionals</p>
-            </div>
-            <div class="stat-item">
-                <h3>4.8</h3>
-                <p>Service Rating</p>
-            </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+                <li>📞 +91 7906199445</li>
+                <li>📍 City Center, India</li>
+            </ul>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>Daivik Home Services</h4>
-                <p>Your trusted partner for all home needs. We ensure quality, safety, and timeliness in every service.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Our Services</h4>
-                <ul>
-                    <li><a href="#">Appliance Repair</a></li>
-                    <li><a href="#">Home Cleaning</a></li>
-                    <li><a href="#">Beauty Services</a></li>
-                    <li><a href="#">Pest Control</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <ul>
-                    <li>📞 +91-98765-43210</li>
-                    <li>✉️ support@daivikhomeservices.com</li>
-                    <li>📍 Main Market, City Center, India</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2025 Daivik Home Services. All rights reserved.
-        </div>
-    </footer>
+    <div class="copyright">
+        © 2025 Daivik Home Professional Care. All rights reserved.
+    </div>
+</footer>
 
 </body>
 </html>

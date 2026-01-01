@@ -481,6 +481,34 @@
         </div>
     </footer>
 
+<!-- LOGIN MODAL -->
+<div id="loginModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:3000;">
+  <div id="loginBox" style="background:#fff; max-width:400px; margin:10% auto; padding:25px; border-radius:10px; text-align:center;">
+    
+    <h3>Login to Continue</h3>
+
+    <div id="step-phone">
+      <input id="phone" placeholder="Enter Mobile Number"
+        style="width:100%;padding:12px;margin:15px 0">
+      <button onclick="sendOTP()"
+        style="width:100%;padding:12px;background:#0066cc;color:#fff;border:none">
+        Get OTP
+      </button>
+    </div>
+
+    <div id="step-otp" style="display:none">
+      <input id="otp" placeholder="Enter OTP"
+        style="width:100%;padding:12px;margin:15px 0">
+      <button onclick="verifyOTP()"
+        style="width:100%;padding:12px;background:#0066cc;color:#fff;border:none">
+        Verify & Continue
+      </button>
+    </div>
+
+    <div id="recaptcha-container"></div>
+  </div>
+</div>
+
 
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>

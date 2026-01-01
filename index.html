@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daivik Home Professional Care - Expert Services at Your Doorstep</title>
-
     <style>
         :root {
             --primary-color: #0066cc;
@@ -57,11 +56,11 @@
             font-weight: bold;
             color: var(--primary-color);
             text-decoration: none;
+            display: flex;
+            align-items: center;
         }
 
-        .logo span {
-            color: var(--text-dark);
-        }
+        .logo span { color: var(--text-dark); }
 
         .nav-links {
             display: flex;
@@ -72,11 +71,10 @@
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 500;
+            transition: color 0.3s;
         }
 
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
+        .nav-links a:hover { color: var(--primary-color); }
 
         .cta-btn {
             background-color: var(--primary-color);
@@ -89,7 +87,7 @@
 
         .hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-            url('https://images.unsplash.com/photo-1581578731117-104f2a41272c');
+            url('https://images.unsplash.com/photo-1581578731117-104f2a41272c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             height: 500px;
@@ -140,73 +138,6 @@
             font-weight: bold;
         }
 
-        .categories {
-            padding: 40px 5%;
-            background-color: var(--white);
-            text-align: center;
-            max-width: 1200px;
-            margin: -50px auto 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .category-card {
-            padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-
-        .category-card:hover {
-            transform: translateY(-5px);
-            background-color: #f9f9f9;
-        }
-
-        .icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        .section-container {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 5%;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 20px;
-        }
-
-        .service-item {
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #eee;
-            border-radius: 8px;
-        }
-
-        .service-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        .stats-section {
-            background-color: var(--secondary-color);
-            padding: 50px 0;
-            text-align: center;
-        }
-
         footer {
             background-color: #222;
             color: #ddd;
@@ -223,7 +154,8 @@
 
         .footer-col h4 {
             color: var(--white);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
         }
 
         .footer-col ul {
@@ -241,12 +173,8 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -254,17 +182,18 @@
 <body>
 
 <div class="top-bar">
-    Get 10% off on your first booking! Call us: <b>+91 7906199445</b>
+    Get 10% off on your first booking! Call us: <b>+91-7906199445</b>
 </div>
 
 <header>
     <div class="nav-container">
-        <a href="#" class="logo">Daivik <span>Home Professional Care</span></a>
+        <a href="#" class="logo">Daivik<span>Home Professional Care</span></a>
         <nav class="nav-links">
-            <a href="#">Appliances</a>
-            <a href="#">Home Care</a>
-            <a href="#">Beauty</a>
-            <a href="#">Handyman</a>
+            <a href="#appliances">Appliances</a>
+            <a href="#home-care">Home Care</a>
+            <a href="#beauty">Beauty</a>
+            <a href="#handyman">Handyman</a>
+            <a href="#about">About Us</a>
         </nav>
         <a href="#" class="cta-btn">Book Now</a>
     </div>
@@ -272,9 +201,9 @@
 
 <section class="hero">
     <h1>Professional Home Services</h1>
-    <h2>Expert help at your doorstep</h2>
+    <h2>Expert help at your doorstep for cleaning, repairs & beauty.</h2>
     <div class="search-bar">
-        <input type="text" placeholder="Search services like AC Repair, Cleaning">
+        <input type="text" placeholder="What are you looking for? (e.g., AC Repair, Sofa Cleaning)">
         <button>Search</button>
     </div>
 </section>
@@ -283,28 +212,20 @@
     <div class="footer-grid">
         <div class="footer-col">
             <h4>Daivik Home Professional Care</h4>
-            <p>Trusted home services with quality, safety & trained professionals.</p>
+            <p>Your trusted partner for all home needs. We ensure quality, safety, and timeliness in every service.</p>
         </div>
+
         <div class="footer-col">
-            <h4>Our Services</h4>
+            <h4>Contact Us</h4>
             <ul>
-                <li>Appliance Repair</li>
-                <li>Home Cleaning</li>
-                <li>Beauty at Home</li>
-                <li>Handyman Services</li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-                <li>📞 +91 7906199445</li>
-                <li>📍 City Center, India</li>
+                <li>📞 +91-7906199445</li>
+                <li>📍 Main Market, City Center, India</li>
             </ul>
         </div>
     </div>
 
     <div class="copyright">
-        © 2025 Daivik Home Professional Care. All rights reserved.
+        &copy; 2025 Daivik Home Professional Care. All rights reserved.
     </div>
 </footer>
 
